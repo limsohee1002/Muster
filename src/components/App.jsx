@@ -1,7 +1,7 @@
 import React from 'react';
 import firebase from 'firebase';
-import { BrowserRouter as Router, Route, Link, Switch, Redirect} from 'react-router-dom';
-import { firebaseAuth, rootRef, collection, category, item, users} from '../../config/firebaseCredentials';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import { firebaseAuth, rootRef, collection, category, item, users } from '../../config/firebaseCredentials';
 import UnprotectedNav from './nav/UnprotectedNav';
 import ProtectedNav from './nav/ProtectedNav';
 import PopularCategoryList from './popularcategory/PopularCategoryList';

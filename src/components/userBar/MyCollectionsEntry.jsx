@@ -11,6 +11,7 @@ export default class MyCollectionsEntry extends React.Component {
         <h5>
           <a href={this.props.name}>{this.props.name}</a>
         </h5>
+        <button onClick={() => {this.props.deleteCollection(this.props.id)}}> x </button>
       </div>
     )
   }

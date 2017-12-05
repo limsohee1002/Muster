@@ -9,7 +9,8 @@ export default class NewCollectionsInput extends React.Component {
       collectionName:'collection',
       category:'category'
     }
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleSubmit(e){
@@ -20,12 +21,27 @@ export default class NewCollectionsInput extends React.Component {
             category: 'add category'
           })
     } else {
-      this.props.addNewCollection(this.state.collectionName, this.state.category);
+      this.props.addNewCollection(this.state.collectionName, this.state.category)
+      this.props.handleClick()
+      console.log('pass?', this.state)
     }
+    
+  }
+
+  handleClick() {
+    this.props.toggleInputForm()
+    this.setState({collectionName: 'collection', category: 'category'})
+  }
+
+  shouldComponentUpdate(nextState) {
+    if(nextState !== this.state) {
+      return true;
+    }
+    return false;
   }
 
   render() {
-    // console.log(this.props.addNewCollection, this.state.collectionName, this.state.category)
+    console.log(this.state)
     return(
       <form onSubmit={(e)=>{
         e.preventDefault();

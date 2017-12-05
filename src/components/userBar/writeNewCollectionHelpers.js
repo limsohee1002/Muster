@@ -70,4 +70,35 @@ export const addNewCollection = function(addCollection, addCategory, photoURL) {
     updateCollections();
     updateUsers();
     updateCategory();
+    // getUserCollection();
+  }
+
+  export const getUserCollection = function() {
+    new Promise((resolve, reject) => {
+      users.child(firebaseAuth().currentUser.uid).on('value',(snap) => {
+        let array = [];
+        for(var key in snap.val().collectionIds){
+          if(key !== "0") {
+            array.push(key)
+          }
+        }
+        return resolve(array)
+      })
+    })
+    .then((collectionIdArr) => {
+      var arr = [];
+      collectionIdArr.forEach(id => {
+        var tempPromise = new Promise((resolve, reject) => {
+          collection.child(id).on('value', (snap) => {
+            resolve([id, snap.val()])
+          })
+        })
+        arr.push(tempPromise)
+      })
+      return Promise.all(arr);
+    })
+    .then(data => {
+      this.setState({collectionList: data})
+    })
+    .catch(console.log('error'))
   }

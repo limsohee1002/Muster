@@ -10,9 +10,9 @@ class CollectionList extends React.Component {
     super(props)
     this.state = {
       categoryName:'',
-      collections: [['id', {photoUrl: 'notworking', name: 'notworking'}]],
+      collections: [['id', {photoUrl: 'add Collection!', name: 'add Collection!'}]],
     }
-    this.getCollectionData = this.getCollectionData.bind(this)
+    this.getCollectionData = this.getCollectionData.bind(this);
   }
 
   componentDidMount() {
@@ -47,6 +47,7 @@ class CollectionList extends React.Component {
         this.setState({collections: data})
       }
     })
+    .catch(console.log('error'))
   }
 
   render() {

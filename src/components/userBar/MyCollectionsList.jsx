@@ -1,6 +1,5 @@
 import React from 'react';
 import { firebaseAuth, rootRef, collection} from '../../../config/firebaseCredentials';
-import DummyData from './DummyData.js'
 import MyCollectionsEntry from './MyCollectionsEntry.jsx';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect} from 'react-router-dom';
 
@@ -16,9 +15,8 @@ export default class MyCollectionsList extends React.Component {
     return (
       <div>
         {this.props.collectionList.map((collection) => {
-          // console.log('collection form',collection)
-          return <div>
-            <Link to={`/items/:${collection[0]}`} key={collection[0]}>
+          return <div key={collection[0]}>
+            <Link to={`/items/:${collection[0]}`} >
               <MyCollectionsEntry
                 categoryId={collection[1].categoryId}
                 name={collection[1].name}

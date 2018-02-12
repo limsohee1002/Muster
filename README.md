@@ -85,13 +85,16 @@ dragulaDecorator(componentBackingInstance){
   };
 ```
 
-## Getting Started
+## Running locally
 in terminal
 ```
 npm install
 firebase serve -p 5000 -o 127.0.0.1
 ```
 now go to http://localhost:5000/
+
+## Live Website
+https://muster-94d83.firebaseapp.com/
 
 ## Tech Stacks
 * Javascript

@@ -104,3 +104,12 @@ https://muster-94d83.firebaseapp.com/
 * React Router
 * Dragula
 * Stripe
+
+## Authors
+* Sohee Lim
+* Seamus Martin
+* Yusaky Kasahara
+* Christine Ma
+
+## License
+This project is licensed under the MIT License

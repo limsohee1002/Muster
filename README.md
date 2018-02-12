@@ -88,8 +88,8 @@ dragulaDecorator(componentBackingInstance){
 ## Running locally
 in terminal
 ```
-npm install
-firebase serve -p 5000 -o 127.0.0.1
+1. npm install
+2. firebase serve -p 5000 -o 127.0.0.1
 ```
 now go to http://localhost:5000/
 

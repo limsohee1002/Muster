@@ -96,7 +96,7 @@ now go to http://localhost:5000/
 ## Live Website
 https://muster-94d83.firebaseapp.com/
 
-## Tech Stacks
+## Tech Stack
 * Javascript
 * React
 * Firebase

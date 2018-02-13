@@ -9,8 +9,10 @@ User may search for specific items by location.
 * category - collections can be organized by category and shared among all users (allow other users to search for items by category)
 * search - when the user searches for items, it will show the location on a map
 * manage items - allows user to change category, collection, and location with drag and drop functionality
-* like - users can like a certain collection, liked collections will show on a profile page
 * trade - user can trade items with each other. Trading has three options. loan, exchange, and purchase
+* like - users can like a certain collection, liked collections will show on a profile page
+* follow - users can follow other users, it will show on profile page
+* chat - users can chat with other users they are following, multiple users can be in one chat room
 
 ## Demo
 ![mustr-demo](https://user-images.githubusercontent.com/30321742/36117161-a4a49832-1006-11e8-9609-26a8f5fa601f.gif)

@@ -1,16 +1,16 @@
 # Muster
 Social-oriented inventory managing application.
-User can organize your items, you can set location of item, category, and collection.
-This app allows user to trade their item each others. User can loan items, purches items, and exchange items.
-If user wants to find certain location item, they can search by location
+Users can organize items, assign locations to items, categorize items, and create collections.
+This app also allows users to trade their items with each other. Users can loan items, purchase items, and exchange items.
+User may search for specific items by location.
 
-## Feature
-* collection - organize items under your collection
-* category - collection can organize by category that share amongs all user (allow other user to search item by category)
-* search - when user search items, it will show location on the map
-* manage items - allows user to change category, collection, and location with drag and drop functionallity
-* like - user can like certain collection, liked collection will show profile page
-* trage - user can trade items eachother. trade has three options. loan, exchange, and purches
+## Features
+* collection - organize items under your collections
+* category - collections can be organized by category and shared among all users (allow other users to search for items by category)
+* search - when the user searches for items, it will show the location on a map
+* manage items - allows user to change category, collection, and location with drag and drop functionality
+* like - users can like a certain collection, liked collections will show on a profile page
+* trade - user can trade items with each other. Trading has three options. loan, exchange, and purchase
 
 ## Demo
 ![mustr-demo](https://user-images.githubusercontent.com/30321742/36117161-a4a49832-1006-11e8-9609-26a8f5fa601f.gif)
